@@ -6,11 +6,11 @@ using UnityEngine;
 public class GameBuilder : MonoBehaviour
 {
     static void webGL() {
-        EditorBuildSettingsScene[] sceneList = EditorBuildSettings.scenes;
+        string[] scenes = {"Assets/Scenes/level1.unity"};
 
         string pathToDeploy = "builds/WebGLVersion";
 
-        BuildPipeline.BuildPlayer(sceneList, pathToDeploy, BuildTarget.WebGL, BuildOptions.None);
+        BuildPipeline.BuildPlayer(scenes, pathToDeploy, BuildTarget.WebGL, BuildOptions.None);
     }
     static void windows() {
         EditorBuildSettingsScene[] sceneList = EditorBuildSettings.scenes;
