@@ -18,6 +18,14 @@ public class GameBuilder : MonoBehaviour
         string pathToDeploy = "./builds/WindowsVersion";
 
         BuildPipeline.BuildPlayer(scenes, pathToDeploy, BuildTarget.StandaloneWindows, BuildOptions.None);
+
+    }
+    static void android() {
+        string[] scenes = {"./Assets/Scenes/level1.unity"};
+
+        string pathToDeploy = "./builds/AndroidVersion";
+
+        BuildPipeline.BuildPlayer(scenes, pathToDeploy, BuildTarget.Android, BuildOptions.None);
     }
 }
 
