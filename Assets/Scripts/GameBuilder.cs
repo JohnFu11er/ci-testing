@@ -1,9 +1,8 @@
 #if UNITY_EDITOR
 
 using UnityEditor;
-using UnityEngine;
 
-public class GameBuilder : MonoBehaviour
+public class GameBuilder
 {
     static void webGL() {
         string[] scenes = {"./Assets/Scenes/level1.unity"};
